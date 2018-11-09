@@ -1,586 +1,623 @@
 <!DOCTYPE html>
 <html>
 
-<head>
-	<meta charset="UTF-8">
-	<title>Insert title here</title>
-	<script type="text/javascript">
-	</script>
-	<style type="text/css">
-		a {
-			text-decoration: none;
-		}
+	<head>
+		<meta charset="UTF-8">
+		<title>Insert title here</title>
+		<script type="text/javascript">
+		</script>
+		<style type="text/css">
+			a {
+				text-decoration: none;
+			}
+			
+			#top_for_all_01 {
+				height: 64px;
+				width: 1140px;
+				margin: 0 auto;
+			}
+			
+			#top_for_all_left_01 {
+				float: left;
+			}
+			
+			#top_for_all_left_01>img {
+				height: 60px;
+				overflow: hidden;
+			}
+			
+			#top_for_all_list_01 {
+				float: left;
+				width: 680px;
+				height: 50px;
+			}
+			
+			#top_for_all_list_01>ul>li {
+				float: left;
+				list-style-type: none;
+			}
+			
+			#top_for_all_list_01>ul>li>a {
+				display: inline-block;
+				padding: 0 12px;
+				font-weight: 600;
+				line-height: 30px;
+				font-size: 20px;
+			}
+			
+			#top_for_all_list_01>ul>li>select {
+				border: none;
+				font-weight: 600;
+				font-size: 20px;
+				padding-left: 12px;
+				line-height: 30px;
+				position: relative;
+				height: 30px;
+			}
+			
+			#top_for_all_form_01 {
+				display: inline-block;
+				width: 300px;
+				height: 30px;
+			}
+			
+			#top_for_all_form_01>input {
+				margin-left: 30px;
+				padding: 6px 12px;
+				font-size: 14px;
+				line-height: 1.42858;
+				color: #555;
+				background-color: #fff;
+				background-image: none;
+				border: 1px solid #ccc;
+				border-radius: 4px;
+				float: left;
+				width: 250px;
+			}
+			
+			#top_for_all_form_01>button {
+				border: none;
+				border-radius: 4px;
+				background-color: white;
+				position: relative;
+				top: -31px;
+				right: -260px;
+			}
+			
+			#top_for_all_form_01>button>img {
+				width: 25px;
+				height: 25px;
+			}
+			
+			.button_re_top_01 {
+				float: right;
+				width: 82px;
+				height: 35px;
+				background-color: pink;
+				border-radius: 4px;
+				font-size: 14px;
+				text-align: center;
+				margin: 12px;
+				border: 1px solid white;
+			}
+			
+			.button_re_top_01>a {
+				color: white;
+				line-height: 35px;
+			}
+			
+			.button_se_top_01 {
+				float: right;
+				width: 82px;
+				height: 35px;
+				background-color: white;
+				border-radius: 4px;
+				font-size: 14px;
+				text-align: center;
+				margin: 12px;
+			}
+			
+			.button_se_top_01>a {
+				color: pink;
+				line-height: 35px;
+			}
+			
+			#top_row_01 {
+				height: 186px;
+				width: 1140px;
+				margin: 0 auto;
+			}
+			
+			#top_row_01>h1 {
+				color: white;
+				width: 570px;
+				float: left;
+			}
+			
+			#top_row_01>p {
+				font-size: 18px;
+				color: white;
+				width: 570px;
+				clear: left;
+				float: left;
+				margin: 0;
+			}
+			
+			#top_row_right_01 {
+				float: right;
+				padding-right: 40px;
+				position: relative;
+				top: -38px;
+			}
+			
+			.button_re_mi_01 {
+				float: right;
+				width: 106px;
+				height: 46px;
+				background-color: pink;
+				border-radius: 4px;
+				font-size: 14px;
+				text-align: center;
+				margin: 12px;
+				border: 1px solid white;
+			}
+			
+			.button_re_mi_01>a {
+				color: white;
+				line-height: 46px;
+			}
+			
+			.button_se_mi_01 {
+				float: right;
+				width: 106px;
+				height: 46px;
+				background-color: white;
+				border-radius: 4px;
+				font-size: 14px;
+				text-align: center;
+				margin: 12px;
+			}
+			
+			.button_se_mi_01>a {
+				color: pink;
+				line-height: 46px;
+			}
+			/* 个人主页上栏部分 */
+			
+			#big_aboutme {
+				background-color: pink;
+				overflow: hidden;
+			}
+			
+			#middle_aboutme {
+				width: 1140px;
+				margin: 0 auto;
+			}
+			
+			#header {
+				float: left;
+			}
+			
+			#header>#header_img {
+				width: 160px;
+				height: 160px;
+				border-radius: 80px;
+				margin: 40px 25px 25px 0;
+			}
+			
+			#header li {
+				float: left;
+				list-style-type: none;
+				text-align: center;
+				margin: 0 0 25px 0;
+			}
+			
+			#header ul {
+				margin: 0;
+				padding: 0;
+				margin-left: 40px;
+			}
+			
+			.icon {
+				width: 26px;
+				height: 26px;
+				border-radius: 13px;
+				display: inline-block;
+				background: url(../imgs/icon.png);
+			}
+			
+			#icon1 {
+				background-position: -6px -105px;
+			}
+			
+			#icon2 {
+				background-position: -50px -181px;
+			}
+			
+			#icon3 {
+				background-position: -95px -258px;
+			}
+			
+			#infos {
+				width: 475px;
+				height: 214px;
+				float: left;
+				margin-top: 40px;
+				margin-bottom: 30px;
+			}
+			
+			.user_row1 {
+				display: inline;
+			}
+			
+			#username {
+				font-size: 30px;
+				margin-right: 15px;
+			}
+			
+			#userdate>a {
+				font-size: 13px;
+				color: #009a61;
+				text-decoration: none;
+			}
+			
+			#userdate>a:hover {
+				color: #555;
+				text-decoration: underline;
+			}
+			
+			#rank_btn {
+				width: 46px;
+				height: 21px;
+				background: #DFF0D8;
+				border: 1px solid #5CB85C;
+				border-radius: 100px;
+				font-size: 15px;
+				color: #43894E;
+				padding: 4px 12px;
+				line-height: 21px;
+				margin-top: 15px;
+			}
+			
+			#users {
+				margin-bottom: 10px;
+			}
+			
+			#users ul {
+				padding: 0;
+				position: relative;
+				left: -6px;
+			}
+			
+			#users li {
+				list-style-type: none;
+			}
+			
+			#users li>a {
+				color: #999;
+			}
+			
+			#users li>a:hover {
+				color: sienna;
+				background-color: burlywood;
+			}
+			
+			.icon2 {
+				width: 26px;
+				height: 26px;
+				border-radius: 13px;
+				display: inline-block;
+				background: url(../imgs/icons.png);
+				position: relative;
+				top: 9px;
+				margin-right: 25px;
+			}
+			
+			#icon_2_1 {
+				background-position: -2px -59px;
+			}
+			
+			#icon_2_2 {
+				background-position: -2px -120px;
+			}
+			
+			#icon_2_3 {
+				background-position: -2px -79px;
+			}
+			
+			#icon_2_4 {
+				background-position: -135px -99px;
+			}
+			
+			#big_box {
+				width: 445px;
+				height: 228px;
+				padding: 15px 0;
+				float: left;
+			}
+			
+			#box_header {
+				height: 32px;
+				background-color: #E3E3E3;
+				padding: 0 12px;
+				border-top-left-radius: 3px;
+				border-top-right-radius: 3px;
+			}
+			
+			#box_header>span {
+				line-height: 32px;
+			}
+			
+			#box_header>span>span {
+				display: inline-block;
+				width: 12px;
+				height: 12px;
+				border-radius: 50%;
+				margin-right: 8px;
+			}
+			
+			#box_header>span>#s1 {
+				background-color: #FF5F57;
+			}
+			
+			#box_header>span>#s2 {
+				background-color: #FFBD2E
+			}
+			
+			#box_header>span>#s3 {
+				background-color: #28CA42;
+			}
+			/* 个人主页下部分 */
+			#context{
+				width: 1140px;
+				margin: 25px auto;
+			}
+			/* 正文 */
+			
+			/* 侧栏 */
+			#left_aside ul,#right_aside ul{
+				list-style-type: none;
+				padding: 0;
+			}
+			#left_aside li,#right_aside li{
+			}
+			/* 左侧栏 */
+			#left_aside{
+				float: left;
+				background-color: #CCCCCC;
+				font-size: 12px;
+				width: 160px;
+				padding: 10px;
+			}
+			/* 标头 */
+			#left_aside_header{
+				overflow: hidden;
+				border-bottom: 2px solid #FFFFFF;
+				background-color: #009A61;
+				padding: 10px;
+			}
+			#left_aside_concern{
+				float: left;
+				width: 50%;
+				height: 70px;
+				background-color: #A0522D;
+			}
+			.line{
+				float: left;
+				display: inline-block;
+				background-color: #FFF;
+				margin: 10px;
+				width: 2px;
+				height: 50px;
+			}
+			#left_aside_fans{
+				width: 30%;
+				float: right;
+				height: 70px;
+				background-color: #FF5F57;
+				
+			}
+			/* 个人信息 */
+			#left_aside_information{
+				background-color: #DEB887;
+				padding: 10px;
+				border-bottom: 2px solid #FFF;
+			}
+			/* 记录 */
+			#left_aside_record{
+				background-color: #788532;
+				padding: 10px;
+			}
+			/* 右侧栏 */
+			#right_aside{
+				background-color: #CCCCCC;
+				float: right;
+			}
+			/* 右侧栏重复框 */
+			.right_aside{
+				
+			}
+			/* 右侧栏重复框标题 */
+			.right_aside_header{
+				
+			}
+			/* 右侧栏重复框 */
+			.right_aside_file{
+				
+			}
+			/* 右侧栏底 */
+			#right_aside_footer{
+				
+			}
+		</style>
+	</head>
 
-		#top_for_all_01 {
-			height: 64px;
-			width: 1140px;
-			margin: 0 auto;
-		}
-
-		#top_for_all_left_01 {
-			float: left;
-		}
-
-		#top_for_all_left_01>img {
-			height: 60px;
-			overflow: hidden;
-		}
-
-		#top_for_all_list_01 {
-			float: left;
-			width: 680px;
-			height: 50px;
-		}
-
-		#top_for_all_list_01>ul>li {
-			float: left;
-			list-style-type: none;
-		}
-
-		#top_for_all_list_01>ul>li>a {
-			display: inline-block;
-			padding: 0 12px;
-			font-weight: 600;
-			line-height: 30px;
-			font-size: 20px;
-		}
-
-		#top_for_all_list_01>ul>li>select {
-			border: none;
-			font-weight: 600;
-			font-size: 20px;
-			padding-left: 12px;
-			line-height: 30px;
-			position: relative;
-			height: 30px;
-		}
-
-		#top_for_all_form_01 {
-			display: inline-block;
-			width: 300px;
-			height: 30px;
-		}
-
-		#top_for_all_form_01>input {
-			margin-left: 30px;
-			padding: 6px 12px;
-			font-size: 14px;
-			line-height: 1.42858;
-			color: #555;
-			background-color: #fff;
-			background-image: none;
-			border: 1px solid #ccc;
-			border-radius: 4px;
-			float: left;
-			width: 250px;
-		}
-
-		#top_for_all_form_01>button {
-			border: none;
-			border-radius: 4px;
-			background-color: white;
-			position: relative;
-			top: -31px;
-			right: -260px;
-		}
-
-		#top_for_all_form_01>button>img {
-			width: 25px;
-			height: 25px;
-		}
-
-		.button_re_top_01 {
-			float: right;
-			width: 82px;
-			height: 35px;
-			background-color: pink;
-			border-radius: 4px;
-			font-size: 14px;
-			text-align: center;
-			margin: 12px;
-			border: 1px solid white;
-		}
-
-		.button_re_top_01>a {
-			color: white;
-			line-height: 35px;
-		}
-
-		.button_se_top_01 {
-			float: right;
-			width: 82px;
-			height: 35px;
-			background-color: white;
-			border-radius: 4px;
-			font-size: 14px;
-			text-align: center;
-			margin: 12px;
-		}
-
-		.button_se_top_01>a {
-			color: pink;
-			line-height: 35px;
-		}
-
-		#top_row_01 {
-			height: 186px;
-			width: 1140px;
-			margin: 0 auto;
-		}
-
-		#top_row_01>h1 {
-			color: white;
-			width: 570px;
-			float: left;
-		}
-
-		#top_row_01>p {
-			font-size: 18px;
-			color: white;
-			width: 570px;
-			clear: left;
-			float: left;
-			margin: 0;
-		}
-
-		#top_row_right_01 {
-			float: right;
-			padding-right: 40px;
-			position: relative;
-			top: -38px;
-		}
-
-		.button_re_mi_01 {
-			float: right;
-			width: 106px;
-			height: 46px;
-			background-color: pink;
-			border-radius: 4px;
-			font-size: 14px;
-			text-align: center;
-			margin: 12px;
-			border: 1px solid white;
-		}
-
-		.button_re_mi_01>a {
-			color: white;
-			line-height: 46px;
-		}
-
-		.button_se_mi_01 {
-			float: right;
-			width: 106px;
-			height: 46px;
-			background-color: white;
-			border-radius: 4px;
-			font-size: 14px;
-			text-align: center;
-			margin: 12px;
-		}
-
-		.button_se_mi_01>a {
-			color: pink;
-			line-height: 46px;
-		}
-
-		/* 个人主页上栏部分 */
-
-		#big_aboutme {
-			background-color: #f6f6f6;
-			overflow: hidden;
-		}
-
-		#middle_aboutme {
-			width: 1140px;
-			margin: 0 auto;
-		}
-
-		#header {
-			float: left;
-		}
-
-		#header>#header_img {
-			width: 160px;
-			height: 160px;
-			border-radius: 80px;
-			margin: 40px 25px 25px 0;
-		}
-
-		#header li {
-			float: left;
-			list-style-type: none;
-			text-align: center;
-			margin: 0 0 25px 0;
-		}
-
-		#header ul {
-			margin: 0;
-			padding: 0;
-			margin-left: 40px;
-		}
-
-		.icon {
-			width: 26px;
-			height: 26px;
-			border-radius: 13px;
-			display: inline-block;
-			background: url(../imgs/icon.png);
-		}
-
-		#icon1 {
-			background-position: -6px -105px;
-		}
-
-		#icon2 {
-			background-position: -50px -181px;
-		}
-
-		#icon3 {
-			background-position: -95px -258px;
-		}
-
-		#infos {
-			width: 475px;
-			height: 214px;
-			float: left;
-			margin-top: 40px;
-			margin-bottom: 30px;
-		}
-
-		.user_row1 {
-			display: inline;
-		}
-
-		#username {
-			font-size: 30px;
-			margin-right: 15px;
-		}
-
-		#userdate>a {
-			font-size: 13px;
-			color: #009a61;
-			text-decoration: none;
-		}
-
-		#userdate>a:hover {
-			color: #555;
-			text-decoration: underline;
-		}
-
-		#rank_btn {
-			width: 46px;
-			height: 21px;
-			background: #DFF0D8;
-			border: 1px solid #5CB85C;
-			border-radius: 100px;
-			font-size: 15px;
-			color: #43894E;
-			padding: 4px 12px;
-			line-height: 21px;
-			margin-top: 15px;
-		}
-
-		#users ul {
-			padding: 0;
-			position: relative;
-			left: -6px;
-		}
-
-		#users li {
-			list-style-type: none;
-		}
-
-		#users li>a {
-			color: #999;
-		}
-
-		#users li>a:hover {
-			color: sienna;
-			background-color: burlywood;
-		}
-
-		.icon2 {
-			width: 26px;
-			height: 26px;
-			border-radius: 13px;
-			display: inline-block;
-			background: url(../imgs/icons.png);
-			position: relative;
-			top: 9px;
-			margin-right: 25px;
-		}
-
-		#icon_2_1 {
-			background-position: -2px -59px;
-		}
-
-		#icon_2_2 {
-			background-position: -2px -120px;
-		}
-
-		#icon_2_3 {
-			background-position: -2px -79px;
-		}
-		
-		#icon_2_4 {
-			background-position: -135px -99px;
-		}
-
-		#big_box {
-			width: 445px;
-			height: 228px;
-			padding: 15px 0;
-			float: left;
-			margin-top: 20px;
-		}
-
-		#box_header {
-			height: 32px;
-			background-color: #E3E3E3;
-			padding: 0 12px;
-			border-top-left-radius: 3px;
-			border-top-right-radius: 3px;
-		}
-
-		#box_header>span {
-			line-height: 32px;
-		}
-
-		#box_header>span>span {
-			display: inline-block;
-			width: 12px;
-			height: 12px;
-			border-radius: 50%;
-			margin-right: 8px;
-		}
-
-		#box_header>span>#s1 {
-			background-color: #FF5F57;
-		}
-
-		#box_header>span>#s2 {
-			background-color: #FFBD2E
-		}
-
-		#box_header>span>#s3 {
-			background-color: #28CA42;
-		}
-
-		#pull-right {
-			width: 40px;
-			height: 18px;
-			line-height: 32px;
-			float: right;
-		}
-
-		#desc_right {
-			color: #999;
-			font-size: 12px;
-			line-height: 32px;
-		}
-
-		#box_footer {
-			width: 405px;
-			padding: 20px;
-			background-color: rgb(238, 238, 238);
-			font-size: 13px;
-			color: rgb(102, 102, 102);
-			height: 197px;
-			font-family: "Source Code Pro", Consolas, Menlo, Monaco, "Courier New", monospace;
-			overflow: auto;
-		}
-		pre>a {
-			color: #43894E;
-		}
-		/*  */
-	</style>
-</head>
-
-<body>
-	<header>
-		<div id="top_for_all_01">
-			<div id="top_for_all_left_01">
-				<img src="../imgs/logo.png">
-			</div>
-			<div id="top_for_all_list_01">
-				<ul>
-					<li>
-						<a href="#">首页</a>
-					</li>
-					<li>
-						<a href="#">问答</a>
-					</li>
-					<li>
-						<a href="#">专栏</a>
-					</li>
-					<li>
-						<a href="#">讲堂</a>
-					</li>
-					<li>
-						<select>
-							<option>发现</option>
-						</select>
-					</li>
-				</ul>
-				<form action="#" id="top_for_all_form_01">
-					<input type="text" placeholder="搜索问题或关键字">
-					<button><img src="../imgs/search.png"></button>
-				</form>
-			</div>
-			<div id="top_for_all_right_01">
-				<div class="button_re_top_01">
-					<a href="#">免费注册</a>
+	<body>
+		<header>
+			<div id="top_for_all_01">
+				<div id="top_for_all_left_01">
+					<img src="../imgs/logo.png">
 				</div>
-				<div class="button_se_top_01">
-					<a href="#">立即登录</a>
-				</div>
-			</div>
-		</div>
-		<div id="big_aboutme">
-			<div id="middle_aboutme">
-				<div id="header">
-					<img src="../imgs/head.png" alt="头像" id="header_img">
+				<div id="top_for_all_list_01">
 					<ul>
 						<li>
-							<a href="#"><span id="icon1" class="icon"></span></a>
+							<a href="#">首页</a>
 						</li>
 						<li>
-							<a href="#"><span id="icon2" class="icon"></span></a>
+							<a href="#">问答</a>
 						</li>
 						<li>
-							<a href="#"><span id="icon3" class="icon"></span></a>
+							<a href="#">专栏</a>
+						</li>
+						<li>
+							<a href="#">讲堂</a>
+						</li>
+						<li>
+							<select>
+								<option>发现</option>
+							</select>
 						</li>
 					</ul>
+					<form action="#" id="top_for_all_form_01">
+						<input type="text" placeholder="搜索问题或关键字">
+						<button><img src="../imgs/search.png"></button>
+					</form>
 				</div>
-				<div id="infos">
-					<div id="users">
-						<div id="username" class="user_row1">AhogeK</div>
-						<div id="userdate" class="user_row1">
-							<a href="#">查看完整档案</a>
-						</div>
-						<div id="rank_btn">0&nbsp;声望</div>
+				<div id="top_for_all_right_01">
+					<div class="button_re_top_01">
+						<a href="#">免费注册</a>
+					</div>
+					<div class="button_se_top_01">
+						<a href="#">立即登录</a>
+					</div>
+				</div>
+			</div>
+			<div id="big_aboutme">
+				<div id="middle_aboutme">
+					<div id="header">
+						<img src="../imgs/head.png" alt="头像" id="header_img">
 						<ul>
-							<li><span id="icon_2_1" class="icon2"></span>
-								<a href="#">填写现居城市</a>
+							<li>
+								<a href="#"><span id="icon1" class="icon"></span></a>
 							</li>
-							<li><span id="icon_2_2" class="icon2"></span>
-								<a href="#">填写毕业院校</a>
+							<li>
+								<a href="#"><span id="icon2" class="icon"></span></a>
 							</li>
-							<li><span id="icon_2_3" class="icon2"></span>
-								<a href="#">填写所有公司</a>
-							</li>
-							<li><span id="icon_2_4" class="icon2"></span>
-								<a href="#">填写个人主网站</a>
+							<li>
+								<a href="#"><span id="icon3" class="icon"></span></a>
 							</li>
 						</ul>
 					</div>
-				</div>
-				<div id="aboutme">
-					<div id="big_box">
-						<div id="box_header">
-							<span>
+					<div id="infos">
+						<div id="users">
+							<div id="username" class="user_row1">AhogeK</div>
+							<div id="userdate" class="user_row1">
+								<a href="#">查看完整档案</a>
+							</div>
+							<div id="rank_btn">0&nbsp;声望</div>
+							<ul>
+								<li><span id="icon_2_1" class="icon2"></span>
+									<a href="#">填写现居城市</a>
+								</li>
+								<li><span id="icon_2_2" class="icon2"></span>
+									<a href="#">填写毕业院校</a>
+								</li>
+								<li><span id="icon_2_3" class="icon2"></span>
+									<a href="#">填写所有公司</a>
+								</li>
+								<li><span id="icon_2_4" class="icon2"></span>
+									<a href="#">填写个人主网站</a>
+								</li>
+							</ul>
+						</div>
+					</div>
+					<div id="aboutme">
+						<div id="big_box">
+							<div id="box_header">
+								<span>
 								<span id="s1"></span>
 								<span id="s2"></span>
 								<span id="s3"></span>
-							</span>
-
-							<a href="#" id="pull_a">
-								<div id="pull-right">
-									<span id="desc_right">
-										编辑
-									</span>
-								</div>
-							</a>
-						</div>
-						<div id="box_footer">
-							<div id="aboutme_context">
-								<pre>
-	_
-	| |__ _ _ __ _
-	| '_ \| | | |/ _` |
-	| |_) | |_| | (_| |
-	|_.__/ \__,_|\__, |
-                      |___/ 暂时没有个人简介，<a href="#">立即添加</a>
-								</pre>
+								</span>
 							</div>
 						</div>
 					</div>
 				</div>
 			</div>
-		</div>
-	</header>
-	<div id="context">
-		<article>
-			<!-- 左侧栏 -->
-			<aside id="left_aside">
-				<!-- 标头 -->
-				<div id="left_aside_header">
-					<div id="left_aside_concern">
-						<p>关注了</p>
-						<p>0 人</p>
+		</header>
+		<div id="context">
+			<article>
+				<!-- 左侧栏 -->
+				<aside id="left_aside">
+					<!-- 标头 -->
+					<div id="left_aside_header">
+						<div id="left_aside_concern">
+							<p>关注了</p>
+							<p>0 人</p>
+						</div>
+						<i class="line"></i>
+						<div id="left_aside_fans">
+							<p>粉丝</p>
+							<p>0 人</p>
+						</div>
 					</div>
-					<div id="left_aside_fans">
-						<p>粉丝</p>
-						<p>0 人</p>
+					<!-- 个人信息 -->
+					<div id="left_aside_information">
+						<ul>
+							<li>我的主页</li>
+							<li>我的答案</li>
+							<li>我的提问</li>
+							<li>我的文章</li>
+							<li>我的讲座</li>
+							<li>我的笔记</li>
+							<li>我的分享</li>
+							<li>我的收藏夹</li>
+						</ul>
 					</div>
-				</div>
-				<!-- 个人信息 -->
-				<div id="left_aside_information">
-					<ul>
-						<li>我的主页</li>
-						<li>我的答案</li>
-						<li>我的提问</li>
-						<li>我的文章</li>
-						<li>我的讲座</li>
-						<li>我的笔记</li>
-						<li>我的分享</li>
-						<li>我的收藏夹</li>
-					</ul>
-				</div>
-				<!-- 记录 -->
-				<div id="left_aside_record">
-					<ul>
-						<li>个人动态</li>
-						<li>我关注的</li>
-						<li>标签得分</li>
-						<li>获得徽章</li>
-						<li>声望记录</li>
-						<li>浏览记录</li>
-					</ul>
-				</div>
-			</aside>
-			<!-- 中间主体 -->
-			<section>
-				bbb
-			</section>
-			<!-- 右侧栏 -->
-			<aside id="right_aside">
-				<!-- 右侧栏重复框 -->
-				<div class="right_aside">
-					<div>
-						<h5>擅长技能</h5>
-						<p><img />编辑</p>
+					<!-- 记录 -->
+					<div id="left_aside_record">
+						<ul>
+							<li>个人动态</li>
+							<li>我关注的</li>
+							<li>标签得分</li>
+							<li>获得徽章</li>
+							<li>声望记录</li>
+							<li>浏览记录</li>
+						</ul>
 					</div>
-					<div></div>
-				</div>
-				<div class="right_aside">
-					<div>
-						<h5>开源项目&amp;著作</h5>
-						<p><img />编辑</p>
+				</aside>
+				<!-- 中间主体 -->
+				<section>
+					bbb
+				</section>
+				<!-- 右侧栏 -->
+				<aside id="right_aside">
+					<!-- 右侧栏重复框 -->
+					<div class="right_aside">
+						<div class="right_aside_header">
+							<h5>擅长技能</h5>
+							<p><img />编辑</p>
+						</div>
+						<div class="right_aside_file"></div>
 					</div>
-					<div></div>
-				</div>
-				<!-- 右侧栏底 -->
-				<div id="right_aside_footer">
-					<p>注册与xx分钟前</p>
-					<p>个人主页被x人浏览</p>
-					<br />
-					<p>分享扩散： <img /><img /><img /><img />
-						<a href="#">……</a>
-					</p>
-				</div>
-			</aside>
-		</article>
-</body>
+					<div class="right_aside">
+						<div class="right_aside_header">
+							<h5>开源项目&amp;著作</h5>
+							<p><img />编辑</p>
+						</div>
+						<div class="right_aside_file"></div>
+					</div>
+					<!-- 右侧栏底 -->
+					<div id="right_aside_footer">
+						<p>注册与xx分钟前</p>
+						<p>个人主页被x人浏览</p>
+						<br />
+						<p>分享扩散： <img /><img /><img /><img />
+							<a href="#">……</a>
+						</p>
+					</div>
+				</aside>
+			</article>
+	</body>
 
 </html>
